@@ -1,3 +1,5 @@
+#CODE CAN VARY WITH CHANGES ON SITE, PLEASE NOTE THAT.
+# DATE:28-04-2020
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import time
@@ -84,8 +86,8 @@ browser.maximize_window()
 action = ActionChains(browser)
 browser.get("https://www.instagram.com/accounts/login/")
 time.sleep(3)
-browser.find_element_by_xpath('//*[@name="username"]').send_keys('nic_temp')
-browser.find_element_by_xpath('//*[@name="password"]').send_keys('nicpatel@963')
+browser.find_element_by_xpath('//*[@name="username"]').send_keys('USERNAME HERE')
+browser.find_element_by_xpath('//*[@name="password"]').send_keys('PASSWORD HERE')
 time.sleep(1)
 try:
 	browser.find_element_by_xpath('//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[4]/button').click()
