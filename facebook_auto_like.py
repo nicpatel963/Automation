@@ -1,8 +1,11 @@
+
+# PLEASE NOTE THAT AUTOMATION CONTAIN TAG FETCHING, IF RESPECTIVE SITE MAKE CHANGE THEN ONE HAVE TO CHANGE CODE 
+# UPLOADING DATE:28-04-2020
 from selenium import webdriver
-from selenium.webdriver.common.by import By
+# from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+# from selenium.webdriver.support import expected_conditions as EC
+# from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.remote.webelement import WebElement
 import time
 from selenium.webdriver.common.action_chains import ActionChains
@@ -34,10 +37,10 @@ browser.maximize_window()
 
 browser.get("https://en-gb.facebook.com/login/")
 # username
-browser.find_element_by_xpath('//*[@id="email"]').send_keys('7016317545')
+browser.find_element_by_xpath('//*[@id="email"]').send_keys('USERNAME HERE')
 time.sleep(1)
 # password
-browser.find_element_by_xpath('//*[@id="pass"]').send_keys('nicpatel@963')
+browser.find_element_by_xpath('//*[@id="pass"]').send_keys('paSSWORD HERE')
 time.sleep(1)
 # login click()
 browser.find_element_by_xpath('//*[@id="loginbutton"]').click()
