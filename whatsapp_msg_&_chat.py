@@ -48,7 +48,7 @@ def send_msg():
 			div_list=browser.find_elements_by_xpath('//*[@id="pane-side"]/div[1]/div/div/div')
 			for j in div_list:
 				# if j.find_element_by_xpath('./div/div/div[2]/div/div').text ==name[i]:
-				if j.find_element_by_xpath('./div/div/div[2]/div/div').text =='Nirmal_AI_TEST':
+				if j.find_element_by_xpath('./div/div/div[2]/div/div').text ==name:
 					j.find_element_by_xpath('./div/div/div[2]/div/div').click()
 					# browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys(".")
 					browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys("https://youtu.be/xnqiK6ZJcIU")
